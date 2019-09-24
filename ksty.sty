@@ -30,3 +30,15 @@
 
 \setlength{\parskip}{0.5em}
 \setlength{\parindent}{0em}
+
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+\usepackage{float}
+
+\providecommand{\image}[1]{
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\linewidth]{#1}
+    \end{figure}
+}
