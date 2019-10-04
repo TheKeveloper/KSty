@@ -28,6 +28,7 @@
 \providecommand{\cor}{\textnormal{Corr}}   
 
 \providecommand{\partials}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\set}[1]{\{#1\}}
 
 \setlength{\parskip}{0.5em}
 \setlength{\parindent}{0em}
@@ -37,9 +38,9 @@
 \usepackage{xcolor}
 \usepackage{float}
 
-\providecommand{\image}[1]{
+\providecommand{\image}[2][1]{
     \begin{figure}[H]
         \centering
-        \includegraphics[width=\linewidth]{#1}
+        \includegraphics[width=#1\linewidth]{#2}
     \end{figure}
 }
